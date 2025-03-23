@@ -1,6 +1,6 @@
 <?php
 namespace App\DAO;
-class ExampleDAO extends DAO
+class InitDAO extends DAO
 {
     public function insert($vals = [])
     {

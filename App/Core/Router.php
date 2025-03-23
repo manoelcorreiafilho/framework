@@ -26,7 +26,8 @@ class Router
                 $controller_name = "\\App\\Controller\\" . $array_control[0];
                 $action = $array_control[1];
                 $controller = new $controller_name();
-                $controller -> $action($matches[1] ?? "");
+                array_shift($matches);
+                $controller -> $action(...$matches);
                 return;
             };
         }

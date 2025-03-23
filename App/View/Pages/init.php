@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>
-        Olá seja bem vindo!!
+        Hello!!
     </h1>
-    <a href="/users">Ver todos os usuários</a>
+    <a href="/exemple">Exemple page</a>
 </body>
 </html>
