@@ -1,11 +1,15 @@
-echo "# framework" >> README.md
+echo "# golink" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/manoelcorreiafilho/framework.git
+git remote add origin https://github.com/manoelcorreiaflh/golink.git
 git push -u origin main
 
-git remote add origin https://github.com/manoelcorreiafilho/framework.git
+git remote add origin https://github.com/manoelcorreiaflh/golink.git
 git branch -M main
 git push -u origin main
+ 
+ 
+git config --global user.email "manoelcorreiaflh@gmail.com"
+git config --global user.name "Manoel Filho"

@@ -7,10 +7,10 @@ class InitController
 {
     public static function index()
     {
-        include("App/View/Pages/init.php");
+        include("App/View/Forms/login.html");
     }
-    public static function exemp()
+    public static function register()
     {
-        include("App/View/Pages/exemp.php");
+        include("App/View/Forms/register.html");
     }
 }
