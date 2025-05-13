@@ -7,18 +7,19 @@
     <title>Cadastre-se</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="/register" method="post" enctype="multipart/form-data">
         <h1>CADASTRO</h1>
         <div class="conteiner-inputs">
-            <input type="text" placeholder="nome completo">
-            <input type="text" placeholder="usuário">
-            <input type="text" placeholder="senha">
-            <input type="text" placeholder="email de confirmação">
+            <input type="file" placeholder="imagem" name="user_img">
+            <input type="text" placeholder="nome completo" name="account_name">
+            <input type="text" placeholder="usuário" name="user_name">
+            <input type="text" placeholder="senha" name="user_pass">
+            <input type="text" placeholder="descricao" name="user_desc">
             <button type="submit">CADASTRAR</button>
         </div>
         <div class="conteiner-footer">
             <p>Já têm uma conta ? <a href="">Entrar</a></p>
-            <p>Desenvolvido por <a href="">OnTechbrti</a></p>
+            <p>Desenvolvido por <a href="">Ontechbrazil</a></p>
         </div>
     </form>
 </body>

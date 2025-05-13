@@ -46,6 +46,7 @@ form .conteiner-inputs{
         width: 20rem;
         background-color: transparent;
         border: 1px solid #5a5a5a;
+        color: #fff;
         &::placeholder{
             color: #fff;
         }
