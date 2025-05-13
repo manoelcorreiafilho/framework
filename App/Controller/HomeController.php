@@ -1,12 +1,10 @@
 <?php
 namespace App\Controller;
-use App\Model\HomeModel;
 class HomeController
 {
-    public static function index($username)
+    public static function index()
     {
-        $model = new HomeModel($username);
-        include("App/View/Pages/index.html");
+        include("App/View/Pages/home.html");
     }
     
 }
