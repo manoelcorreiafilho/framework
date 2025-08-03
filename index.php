@@ -1,6 +1,6 @@
 <?php
-use App\Controller\Controller;
 use App\Core\Router;
 require_once "autoload.php";
-Router::add("/", "HomeController@index");
+Router::add("/", "LoginController@index");
+Router::add("/register", "RegisterController@index");
 Router::run();

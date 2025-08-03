@@ -31,6 +31,6 @@ class Router
                 return;
             };
         }
-        Controller::notFound();
+        Controller::not_found();
     }
 }

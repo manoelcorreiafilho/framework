@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Public/css/forms/login.css">
-    <title>Cadastre-se</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login</title>
 </head>
 <body>
-    <form action="/register" method="post" enctype="multipart/form-data">
-        <h1>CADASTRO</h1>
-        <div class="conteiner-inputs">
-            <input type="file" placeholder="imagem" name="user_img">
-            <input type="text" placeholder="nome completo" name="account_name">
-            <input type="text" placeholder="usuário" name="user_name">
-            <input type="text" placeholder="senha" name="user_pass">
-            <input type="text" placeholder="descricao" name="user_desc">
-            <button type="submit">CADASTRAR</button>
-        </div>
-        <div class="conteiner-footer">
-            <p>Já têm uma conta ? <a href="">Entrar</a></p>
-            <p>Desenvolvido por <a href="">Ontechbrazil</a></p>
-        </div>
-    </form>
+    <div class="h-[100vh] flex justify-center items-center">
+        <form action="" class="flex flex-col justify-center items-center gap-2">
+            <h1 class="text-3xl font-semibold">REGISTER</h1>
+            <div class="flex flex-col w-full">
+                <label for="name" class="text-sm">Nome</label>
+                <input id="name" class="bg-gray-200 p-3 rounded-sm w-80 text-sm" type="text" placeholder="Digite seu nome">
+            </div>
+            <div class="flex flex-col w-full">
+                <label for="user" class="text-sm">Usuario</label>
+                <input id="user" class="bg-gray-200 p-3 rounded-sm w-80 text-sm" type="text" placeholder="Digite seu usuario">
+            </div>
+            <div class="flex flex-col w-full">
+                <label for="email" class="text-sm">Email</label>
+                <input id="email" class="bg-gray-200 p-3 rounded-sm w-80 text-sm" type="text" placeholder="Digite seu email">
+            </div>
+            <div class="flex flex-col w-full">
+                <label for="pass" class="text-sm">Senha</label>
+                <input id="pass" class="bg-gray-200 p-3 rounded-sm w-80 text-sm" type="text" placeholder="Digite seu senha">
+            </div>
+            <div class="flex flex-col w-full">
+                <label for="vpass" class="text-sm">Confirmar senha</label>
+                <input id="vpass" class="bg-gray-200 p-3 rounded-sm w-80 text-sm" type="text" placeholder="Digite seu senha">
+            </div>
+            <button type="submit" class="cursor-pointer hover:bg-gray-700 bg-gray-800 text-white py-3 rounded-sm w-80 text-sm">ENVIAR</button>
+            <p class="text-[12px]">Já tem uma conta ? <a class="font-semibold border-b border-gray-800" href="/">Logar</a></p>
+            <p class="text-[12px]">Copyright © <span id="year"></span> Sistema</p>
+        </form>
+    </div>
+    <script>
+        let year = new Date();
+        let span = document.getElementById("year");
+        span.innerHTML = year.getFullYear();
+    </script>
 </body>
 </html>
